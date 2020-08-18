@@ -1,0 +1,24 @@
+{
+  "name": "keez",
+  "version": "1.0.0",
+  "description": "Personal portfolio.",
+  "main": "index.js",
+  "scripts": {
+    "build": "parcel build index.html --no-cache",
+    "start": "parcel index.html --no-cache"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keezeden/keez.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/keezeden/keez/issues"
+  },
+  "homepage": "https://github.com/keezeden/keez#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}
