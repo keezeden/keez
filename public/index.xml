@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on case (me)</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content in Home on case (me)</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 25 Apr 2024 22:49:22 +1200</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>the courage to be seen</title>
+      <link>http://localhost:1313/posts/1/</link>
+      <pubDate>Thu, 25 Apr 2024 22:49:22 +1200</pubDate>
+      <guid>http://localhost:1313/posts/1/</guid>
+      <description>corny ahh title, i know - but stick with me here&#xA;this first post has a few different ideas and origins ive gathered from the last few years&#xA;swxy&amp;rsquo;s learn in public through a colleague of mine i ended up hearing about swxy and more importantly his learn in public mentality. its a really cool rule and makes total sense, but man&#xA;looking dumb is hard&#xA;or at least i think it is.</description>
+    </item>
+  </channel>
+</rss>

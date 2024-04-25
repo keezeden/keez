@@ -1,3 +1,59 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'case (me)'
+theme = 'Typo'
+
+# Disable tags, actually, they are rendered as a list, but the idea is to disable them.
+disableKinds = ['taxonomy']
+
+# Google analytics code
+googleAnalytics = "G-xxxxxxxxxx"
+
+[params]
+# Math mode
+math = true
+
+# Intro on main page, content in markdown, if you omit title or content the other can be displayed
+homeIntro = true
+homeIntroTitle = 'hey'
+homeIntroContent = """
+i mainly just write whatever im thinking about currently or have recently learned. i also have a [resume](/resume) if you here for that
+"""
+
+# Collection to display on home page:
+# in this case we would display content/posts pages
+homeCollectionTitle = 'posts'
+homeCollection = 'posts'
+
+# Pagination size across all website, this is the same for homepage and single list page
+paginationSize = 100
+
+# Social icons
+[[params.social]]
+name = "twitter"
+url = "https://twitter.com/khaze_gg"
+
+
+[[params.social]]
+name = "github"
+url = "https://github.com/keezeden"
+
+# Main menu pages
+[[params.menu]]
+name = "home"
+url = "/"
+
+[[params.menu]]
+name = "posts"
+url = "/posts"
+
+[[params.menu]]
+name = "resume"
+url = "/resume"
+
+# Syntax highligth on code blocks, all styles:
+# https://xyproto.github.io/splash/docs/all.html
+# I suggest algol
+[markup]
+[markup.highlight]
+style = 'algol'
