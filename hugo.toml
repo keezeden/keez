@@ -31,7 +31,7 @@ paginationSize = 100
 # Social icons
 [[params.social]]
 name = "twitter"
-url = "https://twitter.com/khaze_gg"
+url = "https://twitter.com/kaze_dev"
 
 
 [[params.social]]

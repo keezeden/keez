@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en-us"
-  dir="ltr">
-
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-  <meta charset="utf-8">
+<html
+  lang="en-us"
+  dir="ltr"
+>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 <title>the courage to be seen | case (me)</title>
 
@@ -13,8 +14,6 @@
 
 
 
-
-  
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <script>
   MathJax = {
@@ -23,19 +22,14 @@
       inlineMath: [['\\[', '\\]'], ['$', '$']]
     }
   };
-</script>
-  
-</head>
+</script> 
+  </head>
 
+   
 
-
-
-
-<body class="auto">
-
-  <div class="content">
-    <header>
-      
+  <body class="auto">
+    <div class="content">
+      <header>
 
 <div class="header">
     <h1>case (me)</h1>
@@ -66,11 +60,9 @@
         
     </div>
 
-</div>
-    </header>
+</div></header>
 
-    <main class="main">
-      
+      <main class="main">
 
 
 
@@ -107,7 +99,7 @@
     <p>corny ahh title, i know - but stick with me here</p>
 <p>this first post has a few different ideas and origins ive gathered from the last few years</p>
 <h3 id="swxys-learn-in-publichttpswwwswyxiolearn-in-public">swxy&rsquo;s <a href="https://www.swyx.io/learn-in-public">learn in public</a></h3>
-<p>through a <a href="https://github.com/chopfitzroys">colleague</a> of mine i ended up hearing about swxy and more importantly his learn in public mentality. its a really cool rule and makes total sense, but man</p>
+<p>through a <a href="https://github.com/chopfitzroy">colleague</a> of mine i ended up hearing about swxy and more importantly his learn in public mentality. its a really cool rule and makes total sense, but man</p>
 <p>looking dumb is hard</p>
 <p>or at least i think it is. i dont even have an audience who will <em>see</em> what im learning, but stepping outside my head where its just &ldquo;man im so fucking smart and cool and well endowed&rdquo;, is tough</p>
 <h3 id="comfort-zone">comfort zone</h3>
@@ -118,13 +110,12 @@
 <p>i saw <a href="/forgor">a tweet</a> about how the writers you know are much cooler than the readers you know - and its kinda true</p>
 <p>i would expand &ldquo;writers&rdquo; to any creative vs people who just study w/e the thing is, but it does checkout for me at least</p>
 <p>its obviously not always true and all that but i think it has something to do with the courage to be seen (wayo title plug) and the type of person you have to be to put yourself out there</p>
-<p>exposing yourself to critisism in your art is a vulnerable position to be in and takes big cajones (cah jone eez)</p>
+<p>exposing yourself to critisism in your art is a vulnerable position to be in and takes big cajones</p>
 <p>maybe mine will grow</p>
 <h3 id="habits-and-accountability">habits and accountability</h3>
 <p><a href="https://www.youtube.com/watch?v=mqIwwomreJ8">this video</a> made me buy all 3 books and read em, and he wasnt lying theyre all really fucking good</p>
 <p>i guess this is my attempt at applying these learnings to something more general like &ldquo;here are my thoughts today&rdquo; instead of a gym routine or some wake up early type shit</p>
 <p>the crippling idea that i could look like a dickhead if i stop posting after claiming to start some grand routine will also help keep me accountable</p>
-<p>man i fuck with jay scholz</p>
 <h3 id="building-personal-image">building personal image</h3>
 <p>this ones kinda more &ldquo;thats probably a good idea&rdquo; than any esoteric goal, but engaging with people and having some sort of pesudo <a href="https://en.wikipedia.org/wiki/Third_place">3rd place</a> sounds nice to me</p>
 <p>its also a great way to have an audience to shill my app/product/shitty saas builds to :smirk:</p>
@@ -142,60 +133,43 @@
 
 </div>
 
+</main>
+    </div>
+  </body>
 
-    </main>
-  </div>
-
-  <footer>
-    <p>Powered by
-    <a href="https://gohugo.io/">Hugo</a>
-    and
-    <a href="https://github.com/tomfran/typo">tomfran/typo</a>
-</p>
-  </footer>
-
-</body>
-
-
-<script>
-
-  function isAuto() {
-    return document.body.classList.contains("auto");
-  }
-
-  function setTheme() {
-    if (!isAuto()) {
-      return
+  <script>
+    function isAuto() {
+      return document.body.classList.contains("auto");
     }
 
-    console
-    document.body.classList.remove("auto");
-    let cls = "light";
+    function setTheme() {
+      if (!isAuto()) {
+        return;
+      }
 
-    console.log
+      console;
+      document.body.classList.remove("auto");
+      let cls = "light";
 
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      cls = "dark";
+      console.log;
+
+      if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        cls = "dark";
+      }
+
+      document.body.classList.add(cls);
     }
 
-    document.body.classList.add(cls);
+    function invert() {
+      document.body.classList.toggle("dark");
+      document.body.classList.toggle("light");
+    }
 
-  }
+    if (isAuto()) {
+      console.log("Setting invert listener");
+      window.matchMedia("(prefers-color-scheme: dark)").addListener(invert);
+    }
 
-  function invert() {
-    document.body.classList.toggle("dark");
-    document.body.classList.toggle("light");
-  }
-
-  if (isAuto()) {
-    console.log("Setting invert listener");
-    window.matchMedia('(prefers-color-scheme: dark)').addListener(invert);
-  }
-
-  setTheme();
-
-
-</script>
-
-
+    setTheme();
+  </script>
 </html>
