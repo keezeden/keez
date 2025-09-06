@@ -1,0 +1,30 @@
+---
+import projectsData from "../config/projects.json";
+import Link from "./Link.astro";
+const projects = projectsData.projects.filter((p) => p.featured).sort((a, b) => a.order - b.order);
+---
+
+<section class="px-6 py-16 max-w-6xl mx-auto mt-32">
+  <div class="space-y-16">
+    {
+      projects.map((project, index) => (
+        <div class={`group flex items-center justify-between py-8 ${index % 2 === 1 ? "flex-row-reverse" : ""}`}>
+          <div class="flex-1">
+            <h3 class="text-4xl font-bold mb-4">{project.name}</h3>
+            <p class="text-gray-600 mb-6 max-w-2xl text-lg">{project.description}</p>
+            <p class="text-sm text-gray-500 mb-12">{project.technologies.join(" • ")}</p>
+            <a
+              href={project.url}
+              class="bg-blue rounded-full font-semibold text-xl px-8 py-4 bg-gray-200 hover:bg-gray-300 transition-colors text-gray-400"
+            >
+              Visit Project
+            </a>
+          </div>
+          <div class={`${index % 2 === 1 ? "mr-8" : "ml-8"}`}>
+            <img src={project.image} alt={project.name} class="w-160 h-128 object-contain" />
+          </div>
+        </div>
+      ))
+    }
+  </div>
+</section>

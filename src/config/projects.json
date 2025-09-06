@@ -1,0 +1,24 @@
+{
+  "projects": [
+    {
+      "id": "cheasy",
+      "name": "Cheasy",
+      "description": "Turn the ingredients in your fridge into something you're not embarrassed to serve.",
+      "technologies": ["FlutterFlow", "Flutter", "Firebase"],
+      "url": "https://www.cheasyapp.com/",
+      "image": "/project-cheasy.png",
+      "featured": true,
+      "order": 1
+    },
+    {
+      "id": "supermesh",
+      "name": "Supermesh",
+      "description": "Gain insight into your business structure and optimize for performance.",
+      "technologies": ["React", "Typescript", "NextJS"],
+      "url": "https://uat.supermesh.pro/",
+      "image": "/project-supermesh.png",
+      "featured": true,
+      "order": 2
+    }
+  ]
+}

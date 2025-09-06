@@ -1,0 +1,21 @@
+---
+import Link from "./Link.astro";
+---
+
+<section class="px-6 py-32 max-w-6xl mx-auto">
+  <div class="flex gap-12">
+    <div class="flex flex-col items-start py-16 w-2/3">
+      <h2 class="text-3xl font-bold mb-12">About Me</h2>
+      <div class="flex-1">
+        <p class="text-xl text-gray-600 leading-relaxed mb-16">
+          I'm a full-stack developer who loves building stuff. Outside of work I enjoy reading, solving word puzzles and
+          training MMA.
+        </p>
+        <Link href="mailto:keez@example.com"> Get in Touch</Link>
+      </div>
+    </div>
+    <div class="flex justify-center">
+      <img src="/me.svg" alt="Keez Eden" class="size-96 object-cover" />
+    </div>
+  </div>
+</section>

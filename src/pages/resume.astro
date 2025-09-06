@@ -1,0 +1,78 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navigation from "../components/Navigation.astro";
+---
+
+<Layout>
+  <Navigation />
+  <main class="max-w-2xl mx-auto px-6 py-16">
+    <!-- Name and Contact -->
+    <header class="mb-12">
+      <h1 class="text-4xl font-bold text-black mb-2">Keez Eden</h1>
+      <p class="text-gray-600">
+        keez@example.com | +1 (555) 123-4567 | keez.dev | @keezdev
+      </p>
+    </header>
+
+    <!-- Role Description -->
+    <section class="mb-12">
+      <p class="text-lg text-black leading-relaxed">
+        Full-stack developer specializing in modern web applications and developer tools. 
+        I build products that turn complex problems into elegant solutions.
+      </p>
+    </section>
+
+    <!-- Experience -->
+    <section class="mb-12">
+      <h2 class="text-xl font-medium text-black mb-6 lowercase">experience</h2>
+      
+      <div class="space-y-6">
+        <div>
+          <div class="flex justify-between items-baseline mb-1">
+            <h3 class="font-medium text-black">Senior Full-Stack Developer</h3>
+            <span class="text-gray-600 text-sm">2022—present</span>
+          </div>
+          <p class="text-gray-600 mb-2">TechCorp Inc.</p>
+          <p class="text-black leading-relaxed">
+            Led development of customer-facing web applications serving 100K+ users → 
+            reduced load times by 40% and improved conversion rates by 25%.
+          </p>
+        </div>
+
+        <div>
+          <div class="flex justify-between items-baseline mb-1">
+            <h3 class="font-medium text-black">Frontend Developer</h3>
+            <span class="text-gray-600 text-sm">2020—2022</span>
+          </div>
+          <p class="text-gray-600 mb-2">StartupXYZ</p>
+          <p class="text-black leading-relaxed">
+            Built responsive React applications from design to deployment → 
+            shipped 15+ features that increased user engagement by 60%.
+          </p>
+        </div>
+
+        <div>
+          <div class="flex justify-between items-baseline mb-1">
+            <h3 class="font-medium text-black">Junior Developer</h3>
+            <span class="text-gray-600 text-sm">2019—2020</span>
+          </div>
+          <p class="text-gray-600 mb-2">Digital Agency Pro</p>
+          <p class="text-black leading-relaxed">
+            Developed custom WordPress solutions and e-commerce platforms → 
+            delivered 20+ client projects with 98% satisfaction rate.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="mb-12">
+      <h2 class="text-xl font-medium text-black mb-6 lowercase">skills</h2>
+      <p class="text-black leading-relaxed">
+        JavaScript, TypeScript, React, Next.js, Node.js, Python, PostgreSQL, 
+        AWS, Docker, Git, Figma → focused on building scalable web applications 
+        with clean, maintainable code.
+      </p>
+    </section>
+  </main>
+</Layout>
