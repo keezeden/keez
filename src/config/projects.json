@@ -18,7 +18,27 @@
       "url": "https://uat.supermesh.pro/",
       "image": "/project-supermesh.png",
       "featured": true,
+      "order": 3
+    },
+    {
+      "id": "therapal",
+      "name": "Therapal",
+      "description": "A Therapists best friend when it comes to managing clients ands sessions.",
+      "technologies": ["React", "Typescript", "NextJS"],
+      "url": "https://therapal.netlify.app/",
+      "image": "/project-therapal.png",
+      "featured": true,
       "order": 2
+    },
+    {
+      "id": "sendd",
+      "name": "Sendd",
+      "description": "Easily set up storefronts, sell products, services, and subscriptions with zero hassle.",
+      "technologies": ["React", "Typescript", "NextJS"],
+      "url": "https://uat.supermesh.pro/",
+      "image": "/project-supermesh.png",
+      "featured": false,
+      "order": 3
     }
   ]
 }
