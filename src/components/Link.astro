@@ -1,10 +1,20 @@
 ---
-const { href } = Astro.props;
+interface Props {
+  href: string;
+  color?: string;
+}
+
+const { href, color = "blue" } = Astro.props;
+
+// Predefined color combinations that Tailwind can detect
+const colorMap: Record<string, string> = {
+  blue: "bg-blue-600 text-white",
+  white: "bg-white text-black",
+};
+
+const colorClasses = colorMap[color];
 ---
 
-<a
-  href={href}
-  class="bg-blue rounded-3xl border-[3px] border-black font-bold text-2xl px-8 py-4 bg-blue-600 text-white"
->
+<a href={href} class={`rounded-3xl border-[3px] border-black font-bold text-2xl px-8 py-4 ${colorClasses}`}>
   <slot /></a
 >

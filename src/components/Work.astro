@@ -1,5 +1,6 @@
 ---
 import projectsData from "../config/projects.json";
+import Link from "./Link.astro";
 const projects = projectsData.projects.filter((p) => p.featured).sort((a, b) => a.order - b.order);
 ---
 
@@ -21,12 +22,9 @@ const projects = projectsData.projects.filter((p) => p.featured).sort((a, b) => 
               ))}
             </div>
             <p class="text-sm text-gray-500 mb-8 md:mb-12">{project.technologies.join(" • ")}</p>
-            <a
-              href={project.url}
-              class="bg-blue rounded-full font-semibold text-lg md:text-xl px-6 md:px-8 py-3 md:py-4 bg-gray-200 hover:bg-gray-300 transition-colors text-gray-400"
-            >
+            <Link href={project.url} color="white">
               Visit Project
-            </a>
+            </Link>
           </div>
           <div class={`order-first md:order-none ${index % 2 === 1 ? "md:mr-8" : "md:ml-8"}`}>
             <img src={project.image} alt={project.name} class="w-64 h-48 md:w-160 md:h-128 object-contain" />
