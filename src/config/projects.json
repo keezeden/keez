@@ -13,7 +13,7 @@
     {
       "id": "supermesh",
       "name": "Supermesh",
-      "description": "A platform that can help you keep track of everything your people can offer",
+      "description": "A platform that can help you keep track of everything your people can offer.",
       "technologies": ["React", "Typescript", "NextJS"],
       "url": "https://supermesh.pro/",
       "image": "/project-supermesh.png",
@@ -23,7 +23,7 @@
     {
       "id": "therapal",
       "name": "Therapal",
-      "description": "A Therapists best friend when it comes to managing clients ands sessions.",
+      "description": "A Therapists best friend when it comes to managing clients and sessions.",
       "technologies": ["React", "Typescript", "NextJS"],
       "url": "https://therapal.netlify.app/",
       "image": "/project-therapal.png",
