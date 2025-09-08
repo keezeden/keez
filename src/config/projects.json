@@ -7,18 +7,20 @@
       "technologies": ["FlutterFlow", "Flutter", "Firebase"],
       "url": "https://www.cheasyapp.com/",
       "image": "/project-cheasy.png",
+      "tags": ["In Progress"],
       "featured": true,
       "order": 1
     },
     {
       "id": "supermesh",
       "name": "Supermesh",
-      "description": "Gain insight into your business structure and optimize for performance.",
+      "description": "A platform that can help you keep track of everything your people can offer",
       "technologies": ["React", "Typescript", "NextJS"],
-      "url": "https://uat.supermesh.pro/",
+      "url": "https://supermesh.pro/",
       "image": "/project-supermesh.png",
+      "tags": ["In Progress"],
       "featured": true,
-      "order": 3
+      "order": 4
     },
     {
       "id": "therapal",
@@ -32,12 +34,13 @@
     },
     {
       "id": "sendd",
-      "name": "Sendd",
-      "description": "Easily set up storefronts, sell products, services, and subscriptions with zero hassle.",
+      "name": "Sendd / Invoice Watcher",
+      "description": "Effortlessly manage outstanding invoices for small businesses.",
       "technologies": ["React", "Typescript", "NextJS"],
-      "url": "https://uat.supermesh.pro/",
-      "image": "/project-supermesh.png",
-      "featured": false,
+      "tags": ["Raised 25k!"],
+      "url": "https://www.sendd.me/",
+      "image": "/project-sendd.png",
+      "featured": true,
       "order": 3
     }
   ]

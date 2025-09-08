@@ -1,6 +1,5 @@
 ---
 import projectsData from "../config/projects.json";
-import Link from "./Link.astro";
 const projects = projectsData.projects.filter((p) => p.featured).sort((a, b) => a.order - b.order);
 ---
 
@@ -13,7 +12,14 @@ const projects = projectsData.projects.filter((p) => p.featured).sort((a, b) => 
         >
           <div class="flex-1 text-center md:text-left">
             <h3 class="text-2xl md:text-4xl font-bold mb-4">{project.name}</h3>
-            <p class="text-gray-600 mb-6 text-base md:text-lg">{project.description}</p>
+            <p class="text-gray-600 mb-3 text-base md:text-lg">{project.description}</p>
+            <div class="mb-3">
+              {project.tags?.map((tag) => (
+                <span class="inline-flex items-center rounded-md bg-blue-600/10 px-2 py-1 text-xs font-medium text-blue-400 inset-ring inset-ring-blue-400/30">
+                  {tag}
+                </span>
+              ))}
+            </div>
             <p class="text-sm text-gray-500 mb-8 md:mb-12">{project.technologies.join(" • ")}</p>
             <a
               href={project.url}
