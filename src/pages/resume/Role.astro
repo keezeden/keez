@@ -1,0 +1,17 @@
+---
+const { company, location, title, period, tasks } = Astro.props;
+---
+
+<div class="mt-6">
+  <div class="flex">
+    <p class="font-semibold">{company}</p>
+    <p class="font-semibold ml-auto text-text-primary-inactive">{location}</p>
+  </div>
+  <div class="flex pb-2">
+    <p class="">{title}</p>
+    <p class="font-semibold ml-auto text-text-primary-inactive">{period}</p>
+  </div>
+  <ol class="list-disc pl-6 gap-3 flex flex-col">
+    {tasks.map((task: string) => <li>{task}</li>)}
+  </ol>
+</div>

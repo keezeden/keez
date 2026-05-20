@@ -1,0 +1,28 @@
+---
+const { currentPath } = Astro.props;
+
+const navItems = [
+  { label: "[/]", href: "/" },
+  { label: "[/resume]", href: "/resume" },
+  { label: "[/projects]", href: "/projects" },
+  { label: "[/blog]", href: "/blog" },
+];
+---
+
+<nav class="border-b border-border py-4 flex w-full gap-6">
+  {
+    navItems.map((item) => {
+      const isActive = currentPath === item.href;
+
+      return (
+        <a
+          href={item.href}
+          class:list={["", isActive ? "text-text-primary" : "text-text-primary-inactive hover:text-text-primary"]}
+        >
+          {item.label}
+        </a>
+      );
+    })
+  }
+  <p class="ml-auto text-text-primary-inactive">[☾]</p>
+</nav>

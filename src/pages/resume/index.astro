@@ -1,0 +1,73 @@
+---
+import MainLayout from "../../layouts/MainLayout.astro";
+import Role from "./Role.astro";
+
+const roles = [
+  {
+    company: "Fabled",
+    location: "Remote, NZ",
+    title: "Frontend Engineer",
+    period: "Dec 2023 - Jun 2025",
+    tasks: [
+      "Sole engineer on a Scratch-inspired drag-and-drop logic editor, enabling non-technical designers to author custom TTRPG game mechanics without writing code",
+      "Identified architectural limits of the logic editor approach and co-designed a JSON Schema-driven replacement, shifting from runtime-interpreted logic to static post-processing — reducing complexity while scaling to support 1M+ unique character builds",
+      "Built a Squarespace-style visual component editor enabling end users to design and save fully custom layouts for displaying their characters, items, and armour — giving players direct control over how their content looked without any engineering involvement",
+      "Built the React UI layer for the schema system, translating a deeply nested, rule-driven schema into a dynamic character builder with conditional rendering, dependency resolution, and real-time state updates",
+    ],
+  },
+  {
+    company: "Self-Employed",
+    location: "",
+    title: "Full Stack Product Engineer",
+    period: "Jun 2025 - Present",
+    tasks: [
+      "Built InvoiceWatcher — an automatic invoice reconciliation tool for small businesses using Next.js and Firebase. The MVP secured $25k in investment and has grown to a profitable business",
+      "Built Therapal, a CRM and invoice generator for therapists, using Next.js — full product from scoping through",
+      "Built Cheasy, an AI-powered recipe app, using FlutterFlow — delivered as a production-ready mobile MVP.",
+      "Owned full product lifecycle across all projects: scoping, architecture, implementation, and deployment.",
+    ],
+  },
+  {
+    company: "Medworld",
+    location: "Remote, NZ",
+    title: "Software Engineer",
+    period: "Sep 2021 - Dec 2023",
+    tasks: [
+      "Designed and implemented a comprehensive E2E and integration testing framework using CI/CD pipelines, significantly reducing regression risk across releases.",
+      "Delivered full-stack features across frontend and backend, and led technical research spikes for third-party integrations.",
+    ],
+  },
+  {
+    company: "Frontend Engineer",
+    location: "Napier, NZ",
+    title: "Software Engineer",
+    period: "Sep 2019 - Sep 2021",
+    tasks: [
+      "Co-architected a scalable UI template system that doubled development velocity across the frontend team.",
+      "Designed a cross-platform message bus for payment integrations and stepped up to lead the frontend team during the tech lead's absence.",
+      "Implemented E2E testing integrated with CI/CD pipelines using GitHub Actions and Bitbucket Pipelines.",
+    ],
+  },
+];
+---
+
+<MainLayout currentPath="/resume">
+  <div>
+    <h1 class="text-3xl font-semibold">Keez Eden</h1>
+    <div class="flex gap-3 text-text-primary-inactive">
+      <p>Napier, New Zealand</p>
+      <p>•</p>
+      <p>keezeden@gmail.com</p>
+      <p>•</p>
+      <p>+64275298734</p>
+    </div>
+
+    <div class="mt-6">
+      <hp class="py-2 text-xl font-semibold">Work Experience</hp>
+    </div>
+
+    <div class="flex flex-col gap-6">
+      {roles.map((role) => <Role {...role} />)}
+    </div>
+  </div>
+</MainLayout>

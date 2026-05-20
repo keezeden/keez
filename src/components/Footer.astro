@@ -1,0 +1,18 @@
+---
+const socials = [
+  { label: "email", href: "" },
+  { label: "linkedin", href: "https://www.linkedin.com/in/keez/" },
+  { label: "github", href: "https://github.com/keezeden" },
+];
+---
+
+<footer class="border-t border-border py-4 flex w-full gap-6">
+  {
+    socials.map((item) => (
+      <a href={item.href} class="text-text-primary-inactive hover:text-text-primary">
+        {item.label}
+      </a>
+    ))
+  }
+  <p class="ml-auto text-text-primary-inactive">@ 2026 Keez Eden</p>
+</footer>

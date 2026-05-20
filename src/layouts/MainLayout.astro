@@ -1,0 +1,27 @@
+---
+import Navigation from "../components/Navigation.astro";
+import Footer from "../components/Footer.astro";
+
+import "@fontsource-variable/geist-mono/wght.css";
+import "../styles/global.css";
+
+const { currentPath } = Astro.props;
+---
+
+<html lang="en" class="flex justify-center items-center text-text-primary font-mono text-[0.9rem]">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>keezeden{currentPath}</title>
+  </head>
+  <body class="bg-background lg:max-w-4xl max-w-10/12 w-full p-6 flex flex-col gap-8">
+    <Navigation currentPath={currentPath} />
+    <article>
+      <slot />
+    </article>
+    <Footer />
+  </body>
+</html>
