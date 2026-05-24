@@ -17,12 +17,45 @@ const navItems = [
       return (
         <a
           href={item.href}
-          class:list={["", isActive ? "text-text-primary" : "text-text-primary-inactive hover:text-text-primary"]}
+          class:list={["", isActive ? "text-foreground" : "text-foreground-muted hover:text-foreground"]}
         >
           {item.label}
         </a>
       );
     })
   }
-  <p class="ml-auto text-text-primary-inactive">[☾]</p>
+  <button
+    type="button"
+    class="ml-auto text-foreground-muted hover:text-foreground"
+    data-theme-toggle
+    aria-label="Switch to dark mode"
+  >
+    <span aria-hidden="true" data-theme-icon>[☾]</span>
+  </button>
 </nav>
+
+<script>
+  const storageKey = "theme";
+  const root = document.documentElement;
+  const toggle = document.querySelector("[data-theme-toggle]");
+  const icon = toggle?.querySelector("[data-theme-icon]");
+
+  const getTheme = () => (root.dataset.theme === "dark" ? "dark" : "light");
+
+  const applyThemeUI = (theme: string) => {
+    if (!toggle || !icon) return;
+
+    const nextTheme = theme === "dark" ? "light" : "dark";
+    icon.textContent = nextTheme === "dark" ? "[☾]" : "[☀]";
+    toggle.setAttribute("aria-label", `Switch to ${nextTheme} mode`);
+  };
+
+  applyThemeUI(getTheme());
+
+  toggle?.addEventListener("click", () => {
+    const nextTheme = getTheme() === "dark" ? "light" : "dark";
+    root.dataset.theme = nextTheme;
+    localStorage.setItem(storageKey, nextTheme);
+    applyThemeUI(nextTheme);
+  });
+</script>
