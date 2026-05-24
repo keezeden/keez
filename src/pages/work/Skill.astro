@@ -1,0 +1,8 @@
+---
+const { category, items } = Astro.props;
+---
+
+<div>
+  <p class="font-semibold">{category}</p>
+  <p class="text-text-primary-inactive">{items.join(", ")}</p>
+</div>

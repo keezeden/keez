@@ -1,0 +1,37 @@
+---
+import MainLayout from "../../layouts/MainLayout.astro";
+import Role from "./Role.astro";
+import resume from "../../../resume.json";
+import Skill from "./Skill.astro";
+
+const { roles, skills } = resume;
+---
+
+<MainLayout currentPath="/work">
+  <div>
+    <h1 class="text-3xl font-semibold">Keez Eden</h1>
+    <div class="flex gap-3 text-text-primary-inactive">
+      <p>Napier, New Zealand</p>
+      <p>•</p>
+      <p>keezeden@gmail.com</p>
+      <p>•</p>
+      <p>+64275298734</p>
+    </div>
+
+    <div class="mt-6">
+      <h2 class="py-2 text-xl font-semibold">Work Experience</h2>
+    </div>
+
+    <div class="flex flex-col gap-6">
+      {roles.map((role) => <Role {...role} />)}
+    </div>
+
+    <div class="mt-12">
+      <h2 class="py-2 text-xl font-semibold">Skills</h2>
+    </div>
+
+    <div class="flex flex-col gap-2">
+      {skills.map((skill) => <Skill {...skill} />)}
+    </div>
+  </div>
+</MainLayout>

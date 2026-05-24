@@ -1,0 +1,14 @@
+---
+const { title, subtitle, description, tools } = Astro.props;
+---
+
+<div class="mt-6">
+  <div class="flex">
+    <p class="font-semibold">{title}</p>
+    <p class="font-semibold ml-auto text-text-primary-inactive">{subtitle}</p>
+  </div>
+  <div class="flex pb-2">
+    <p class="">{description}</p>
+    <p class="font-semibold ml-auto text-text-primary-inactive">{tools}</p>
+  </div>
+</div>
