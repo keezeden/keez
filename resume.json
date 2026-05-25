@@ -48,16 +48,36 @@
   ],
   "projects": [
     {
+      "type": "client",
+      "title": "InvoiceWatcher (Now Sendd)",
+      "subtitle": "Automatic Invoice Reconciliation Tool",
+      "description": "Secured 25k in investment by building and demoing the MVP for an automatic invoice reconciliation tool for small businesses.",
+      "tools": ["Next.js", "React", "Firebase"],
+      "link": "https://www.sendd.store"
+    },
+    {
+      "type": "client",
+      "title": "Therapal",
+      "subtitle": "Therapist CRM and Invoice Generator",
+      "description": "Created a CRM for counsellors and psychiatrists to manage ACC clients and invoices.",
+      "tools": ["Next.js", "React", "Supabase"],
+      "link": "https://therapal.netlify.app"
+    },
+    {
+      "type": "personal",
       "title": "Klefki",
       "subtitle": "In Memory Key Value Store",
       "description": "Implemented a high throughput key value store.",
-      "tools": "Golang"
+      "tools": ["Golang"],
+      "link": "https://github.com/keezeden/klefki"
     },
     {
+      "type": "personal",
       "title": "Lance",
       "subtitle": "Custom Programming Language",
-      "description": "Designed and implemented a compiler in Go with a full pipeline: tokeniser, AST, and interpreter/compiler supporting custom syntax and semantics.",
-      "tools": "Golang"
+      "description": "Designed and implemented a compiler in Go with a full pipeline: tokeniser, AST, and interpreter + compiler supporting custom syntax and semantics.",
+      "tools": ["Golang"],
+      "link": "https://github.com/keezeden/lance"
     }
   ],
   "skills": [
@@ -114,6 +134,15 @@
     {
       "category": "Practices",
       "items": ["Agile/Scrum", "Microservices", "Event-driven Architecture", "DDD", "Code Review", "Pair Programming"]
+    }
+  ],
+  "education": [
+    {
+      "title": "Eastern Institute of Technology",
+      "location": "Napier, NZ",
+      "subtitle": "Bachelor of Computing Systems",
+      "period": "Jan 2018 - Apr 2019",
+      "description": "GovHack 2019 — International Peopl's Choice Award winner"
     }
   ]
 }

@@ -4,15 +4,26 @@ import Project from "./Project.astro";
 import resume from "../../../resume.json";
 
 const { projects } = resume;
+const personalProjects = projects.filter((p) => p.type.toUpperCase() === "PERSONAL");
+const clientProjects = projects.filter((p) => p.type.toUpperCase() === "CLIENT");
 ---
 
 <MainLayout currentPath="/projects">
-  <div class="flex flex-col gap-5">
+  <div class="flex flex-col gap-6">
     <div>
       <h1 class="py-2 text-2xl font-semibold">Projects</h1>
     </div>
     <div>
-      {projects.map((project) => <Project {...project} />)}
+      <h2 class="py-2 text-xl font-semibold">Client</h2>
+      <div class="flex flex-col gap-2">
+        {clientProjects.map((project) => <Project {...project} />)}
+      </div>
+    </div>
+    <div>
+      <h2 class="py-2 text-xl font-semibold">Personal</h2>
+      <div class="flex flex-col gap-4">
+        {personalProjects.map((project) => <Project {...project} />)}
+      </div>
     </div>
   </div>
 </MainLayout>

@@ -1,14 +1,14 @@
 ---
-const { title, subtitle, description, tools } = Astro.props;
+const { title, subtitle, description, tools, link } = Astro.props;
 ---
 
-<div class="mt-6">
+<div>
   <div class="flex">
     <p class="font-semibold">{title}</p>
-    <p class="font-semibold ml-auto text-foreground-muted">{subtitle}</p>
+    <a href={link} target="_blank" class="font-semibold ml-auto text-foreground-muted">{subtitle} &#8599;</a>
   </div>
-  <div class="flex pb-2">
-    <p class="">{description}</p>
-    <p class="font-semibold ml-auto text-foreground-muted">{tools}</p>
+  <div class="flex flex-col pb-2">
+    <p class="w-full">{description}</p>
+    <p class="font-semibold text-foreground-muted">{tools.join(", ")}</p>
   </div>
 </div>
