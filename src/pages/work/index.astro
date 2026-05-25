@@ -4,7 +4,7 @@ import Role from "./Role.astro";
 import resume from "../../../resume.json";
 import Skill from "./Skill.astro";
 
-const { roles, skills } = resume;
+const { roles = [], skills = [] } = resume;
 ---
 
 <MainLayout currentPath="/work">

@@ -1,27 +1,32 @@
 {
+  "socials": [
+    { "label": "email", "href": "mailto:name@keezeden@gmail.com" },
+    { "label": "linkedin", "href": "https://www.linkedin.com/in/keez/" },
+    { "label": "github", "href": "https://github.com/keezeden" }
+  ],
   "roles": [
+    {
+      "company": "Self-Employed",
+      "location": "Remote, NZ",
+      "title": "Full Stack Engineer",
+      "period": "Jun 2025 - Present",
+      "tasks": [
+        "Built InvoiceWatcher, an automatic invoice reconciliation tool for small businesses in Next.js and Firebase — the MVP secured $25k in investment and has since grown into a profitable business.",
+        "Delivered two further client MVPs end-to-end: Therapal (a CRM and invoice generator for therapists in Next.js) and Cheasy (an AI-powered recipe app in FlutterFlow), both taken from scoping through to production deployment",
+        "Owned the full product lifecycle across all engagements — requirements scoping, architecture, implementation, and deployment — working directly with clients as the sole engineer."
+      ]
+    },
     {
       "company": "Fabled",
       "location": "Remote, NZ",
       "title": "Frontend Engineer",
       "period": "Dec 2023 - Jun 2025",
       "tasks": [
-        "Sole engineer on a Scratch-inspired drag-and-drop logic editor, enabling non-technical designers to author custom TTRPG game mechanics without writing code",
-        "Identified architectural limits of the logic editor approach and co-designed a JSON Schema-driven replacement, shifting from runtime-interpreted logic to static post-processing — reducing complexity while scaling to support 1M+ unique character builds",
-        "Built a Squarespace-style visual component editor enabling end users to design and save fully custom layouts for displaying their characters, items, and armour — giving players direct control over how their content looked without any engineering involvement",
-        "Built the React UI layer for the schema system, translating a deeply nested, rule-driven schema into a dynamic character builder with conditional rendering, dependency resolution, and real-time state updates"
-      ]
-    },
-    {
-      "company": "Self-Employed",
-      "location": "",
-      "title": "Full Stack Product Engineer",
-      "period": "Jun 2025 - Present",
-      "tasks": [
-        "Built InvoiceWatcher — an automatic invoice reconciliation tool for small businesses using Next.js and Firebase. The MVP secured $25k in investment and has grown to a profitable business",
-        "Built Therapal, a CRM and invoice generator for therapists, using Next.js — full product from scoping through",
-        "Built Cheasy, an AI-powered recipe app, using FlutterFlow — delivered as a production-ready mobile MVP.",
-        "Owned full product lifecycle across all projects: scoping, architecture, implementation, and deployment."
+        "Sole engineer on a platform enabling non-developers to design, build, and host fully automated tabletop RPG systems online — covering game logic, entity creation, and visual presentation.",
+        "Built a Scratch-inspired drag-and-drop logic editor as the rules engine layer, allowing game creators to define mechanical behaviours (equipment effects, stat modifiers, conditionals) without writing code.",
+        "Co-designed and implemented a JSON Schema-driven character builder to replace the logic editor's game-system layer — shifting to static post-processing to handle complex rule interdependencies, scaling to 1M+ unique character builds.",
+        "Built an entity editor enabling creators to instantiate logic templates into concrete game items (e.g. a single 'sword' logic block powering multiple named variants with different stats).",
+        "Built a Squarespace-style visual component editor allowing creators to design fully custom display cards for their entities — giving game designers direct control over presentation without engineering involvement."
       ]
     },
     {
@@ -30,19 +35,22 @@
       "title": "Software Engineer",
       "period": "Sep 2021 - Dec 2023",
       "tasks": [
-        "Designed and implemented a comprehensive E2E and integration testing framework using CI/CD pipelines, significantly reducing regression risk across releases.",
-        "Delivered full-stack features across frontend and backend, and led technical research spikes for third-party integrations."
+        "Led technical evaluation of architecture options for a private social platform for medical professionals — assessing a BaaS solution, open-source template, and greenfield build — presenting findings and recommendations to stakeholders.",
+        "Contributed full-stack features to the greenfield platform following the architectural pivot, including core social functionality such as posting and friend connections.",
+        "Designed and owned the integration and E2E testing suite, achieving ~80–90% test coverage across ~30–60 test cases and integrating into CI/CD pipelines to catch regressions before release.",
+        "Presented technical progress and platform demos at internal all-hands and stakeholder reviews, translating engineering decisions into accessible context for non-technical audiences."
       ]
     },
     {
-      "company": "Frontend Engineer",
+      "company": "Fingermark",
       "location": "Napier, NZ",
       "title": "Software Engineer",
       "period": "Sep 2019 - Sep 2021",
       "tasks": [
-        "Co-architected a scalable UI template system that doubled development velocity across the frontend team.",
-        "Designed a cross-platform message bus for payment integrations and stepped up to lead the frontend team during the tech lead's absence.",
-        "Implemented E2E testing integrated with CI/CD pipelines using GitHub Actions and Bitbucket Pipelines."
+        "Co-led the consolidation of 5 near-duplicate client repos (Hungry Jack's, KFC, etc.) into a single modular, themeable, and feature-configurable platform — reducing cross-client change time by 50% and enabling instant feature parity across customers via config.",
+        "Maintained and supported the internal device management dashboard used to configure kiosk settings and feature flags across the client fleet.",
+        "Briefly assumed de facto frontend lead responsibilities following the tech lead's departure, coordinating frontend direction as the most senior frontend engineer on the team.",
+        "Provided ongoing support for the legacy Linux/Java kiosk system and implemented foundational E2E testing integrated into CI/CD pipelines."
       ]
     }
   ],
