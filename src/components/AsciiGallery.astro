@@ -3,8 +3,12 @@ import wave from "../art/wave.txt?raw";
 ---
 
 <div>
-  <pre id="art" class="leading-[0.7rem] tracking-[-0.020em]">{wave}</pre>
-  <div class="flex">
-    <p class="text-foreground-muted ml-auto pt-1">The Great Wave Off Kanegawa</p>
+  <div class="overflow-x-auto pb-2">
+    <!-- <pre id="art" class="mx-auto w-fit min-w-max leading-[0.7rem] tracking-[-0.020em]">{wave}</pre> -->
+    <pre
+      id="art"
+      class="mx-auto w-fit min-w-max text-[0.42rem] leading-[0.38rem] tracking-[-0.020em] sm:text-[0.9rem] sm:leading-[0.7rem]">{wave}</pre>
   </div>
+  <p class="text-foreground-muted ml-auto pt-1 text-right text-xs sm:text-sm pr-8">The Great Wave Off Kanegawa</p>
+  <div class="flex"></div>
 </div>

@@ -4,7 +4,7 @@ import resume from "../../resume.json";
 const { socials } = resume;
 ---
 
-<footer class="border-t border-border py-4 flex w-full gap-6">
+<footer class="border-t border-border py-4 flex w-full flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-6">
   {
     socials.map((item) => (
       <a href={item.href} class="text-foreground-muted hover:text-foreground">
@@ -12,5 +12,5 @@ const { socials } = resume;
       </a>
     ))
   }
-  <p class="ml-auto text-foreground-muted">@ 2026 Keez Eden</p>
+  <p class="text-foreground-muted sm:ml-auto">@ 2026 Keez Eden</p>
 </footer>

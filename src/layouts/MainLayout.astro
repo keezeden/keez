@@ -8,7 +8,7 @@ import "../styles/global.css";
 const { currentPath } = Astro.props;
 ---
 
-<html lang="en" class="flex justify-center items-center text-foreground font-mono text-[0.9rem]">
+<html lang="en" class="text-foreground font-mono text-[0.9rem]">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -26,7 +26,7 @@ const { currentPath } = Astro.props;
     </script>
     <title>keezeden{currentPath}</title>
   </head>
-  <body class="bg-background text-foreground lg:max-w-4xl max-w-10/12 w-full p-6 flex flex-col gap-8">
+  <body class="bg-background text-foreground w-full max-w-4xl mx-auto px-4 py-5 sm:px-6 sm:py-6 flex flex-col gap-8">
     <Navigation currentPath={currentPath} />
     <article>
       <slot />

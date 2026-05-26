@@ -9,24 +9,26 @@ const navItems = [
 ];
 ---
 
-<nav class="border-b border-border pb-3 flex w-full gap-6">
-  {
-    navItems.map((item) => {
-      const isActive = currentPath === item.href;
+<nav class="border-b border-border pb-3 flex w-full items-start gap-4 sm:items-center sm:gap-6">
+  <div class="flex min-w-0 flex-1 flex-wrap gap-x-4 gap-y-2">
+    {
+      navItems.map((item) => {
+        const isActive = currentPath === item.href;
 
-      return (
-        <a
-          href={item.href}
-          class:list={["", isActive ? "text-foreground" : "text-foreground-muted hover:text-foreground"]}
-        >
-          {item.label}
-        </a>
-      );
-    })
-  }
+        return (
+          <a
+            href={item.href}
+            class:list={["", isActive ? "text-foreground" : "text-foreground-muted hover:text-foreground"]}
+          >
+            {item.label}
+          </a>
+        );
+      })
+    }
+  </div>
   <button
     type="button"
-    class="ml-auto text-foreground-muted hover:text-foreground"
+    class="ml-auto shrink-0 text-foreground-muted hover:text-foreground"
     data-theme-toggle
     aria-label="Switch to dark mode"
   >
